@@ -1,14 +1,16 @@
 <template>
   <div class="container">
-    <h1>Hello World</h1>
+    <HeaderComponent/>
   </div>
 </template>
 
 <script>
+import HeaderComponent from './components/HeaderComponent.vue';
 
 export default {
   name: 'App',
   components: {
+    HeaderComponent
   }
 }
 </script>
