@@ -1,10 +1,12 @@
 <template>
     <header>
-        <h1>Task Tracker</h1>
+        <h1>{{title}}</h1>
+        <ButtonComponent/>
     </header>
 </template>
 
 <script>
+import ButtonComponent from './Button.vue'
 // import { defineComponent } from '@vue/composition-api'
 
 // export default defineComponent({
@@ -13,8 +15,22 @@
 // })
 
 export default {
-    data () {
+    name: 'HeaderComponent',
+    // props: ['title'],
+    // props: {
+    //     title: {
+    //         type: String,
+    //         default: 'Hello World'
+    //     }
+    // },
+    components: {
+        ButtonComponent
+    },
+    props: {
+        title: String
+    },
 
+    data () {
     }
 }
 
